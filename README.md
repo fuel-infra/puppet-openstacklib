@@ -1,7 +1,7 @@
 openstacklib
 ============
 
-6.0.0 - 2015.1 - Kilo
+7.0.0 - 2015.2 - Liberty
 
 #### Table of Contents
 
@@ -30,8 +30,7 @@ The openstacklib module is a library module for other Openstack modules to
 utilize. A thorough description will be added later.
 
 This module is tested in combination with other modules needed to build and
-leverage an entire Openstack software stack.  These modules can be found, all
-pulled together in the [openstack module](https://github.com/stackforge/puppet-openstack).
+leverage an entire Openstack software stack.
 
 Setup
 -----
@@ -324,4 +323,6 @@ Puppet Module :: OpenStack Version :: OpenStack Codename
 3.0.0         -> 2013.2.0          -> Havana
 4.0.0         -> 2014.1.0          -> Icehouse
 5.0.0         -> 2014.2.0          -> Juno
+6.0.0         -> 2015.1.0          -> Kilo
+7.0.0         -> 2015.2.0          -> Liberty
 ```
