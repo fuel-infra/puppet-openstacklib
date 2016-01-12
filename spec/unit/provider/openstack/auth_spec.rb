@@ -52,7 +52,7 @@ describe Puppet::Provider::Openstack::Auth do
         }
       klass.set_credentials(credentials, set)
       expect(credentials.to_env).to eq(
-        "OS_AUTH_URL"             => "http://127.0.0.1:5000/v2.0",
+        "OS_AUTH_URL"             => "http://127.0.0.1:5000",
         "OS_IDENTITY_API_VERSION" => '2.0',
         "OS_PASSWORD"             => "secret",
         "OS_PROJECT_NAME"         => "tenant",
@@ -166,7 +166,7 @@ describe Puppet::Provider::Openstack::Auth do
           'OS_USERNAME'     => 'test',
           'OS_PASSWORD'     => 'abc123',
           'OS_PROJECT_NAME' => 'test',
-          'OS_AUTH_URL'     => 'http://127.0.0.1:5000/v2.0'
+          'OS_AUTH_URL'     => 'http://127.0.0.1:5000'
         })
       end
     end
@@ -211,7 +211,7 @@ describe Puppet::Provider::Openstack::Auth do
           'OS_USERNAME'     => 'test',
           'OS_PASSWORD'     => 'abc123',
           'OS_PROJECT_NAME' => 'test',
-          'OS_AUTH_URL'     => 'http://127.0.0.1:5000/v2.0'
+          'OS_AUTH_URL'     => 'http://127.0.0.1:5000'
         })
       end
     end
