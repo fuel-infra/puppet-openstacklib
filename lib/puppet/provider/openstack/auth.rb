@@ -2,8 +2,7 @@ require 'puppet/provider/openstack/credentials'
 
 module Puppet::Provider::Openstack::Auth
 
-  RCFILENAME = File.exists?("#{ENV['HOME']}/openrc") ?
-    "#{ENV['HOME']}/openrc" : '/root/openrc'
+  RCFILENAME = "#{ENV['HOME']}/openrc"
 
   def get_os_vars_from_env
     env = {}
