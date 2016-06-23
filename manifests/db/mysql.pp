@@ -63,7 +63,7 @@ define openstacklib::db::mysql (
     }
   } else {
 
-    require mysql::python
+    require ::mysql::python
     mysql::db { $dbname:
       user     => $user,
       password => $password_hash,
